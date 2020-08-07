@@ -55,23 +55,23 @@ class MenuWidget extends Widget
 		}
 		return $tree;
 	}
+ 
+	// protected function getMenuHtml ($tree)
+	// {
+	// 	$str = '';
 
-	protected function getMenuHtml ($tree)
-	{
-		$str = '';
+	// 	foreach ($tree as $category) {
+	// 		$str .= $this->catToTemplate($category);
+	// 	}
 
-		foreach ($tree as $category) {
-			$str .= $this->catToTemplate($category);
-		}
+	// 	return $str;
+	// }
 
-		return $str;
-	}
-
-	protected function catToTemplate($category){
-		ob_start();
-		include __DIR__.'/menu_tpl/'.$this->tpl;
-		return ob_get_clean();
-	} 
+	// protected function catToTemplate($category){
+	// 	ob_start();
+	// 	include __DIR__.'/menu_tpl/'.$this->tpl;
+	// 	return ob_get_clean();
+	// } 
 
 
 }
