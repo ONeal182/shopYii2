@@ -115,6 +115,13 @@
                     </div>
                 </div>
                 <?php endforeach; ?>
+                <div class="col-md-12">
+                    <?= \yii\widgets\LinkPager::widget([
+                        'pagination' => $pages,
+                        'nextPageCssClass' => 'next test',
+                       'maxButtonCount' => 3,
+                    ]) ?>
+                </div>
                 <div class="clearfix"> </div>
             </div>
             <?php else: ?>
