@@ -93,9 +93,7 @@ AppAsset::register($this);
 		</div>
 	</div>
 <!-- //header -->
-	<div class="banner">
-<!-- banner -->
-<?= $this->render('//layouts/inc/sidebar')?>
+
 
 <?= $content?>
 <!-- newsletter -->

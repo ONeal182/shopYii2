@@ -52,7 +52,10 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'enableStrictParsing' => false,
+            'suffix' => '/',
             'rules' => [
+               'category/<id:\d+>' => 'category/view',
+                'product/<id:\d+>' => 'product/view',
             ],
         ],
     ],
